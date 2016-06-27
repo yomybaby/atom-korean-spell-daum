@@ -15,7 +15,7 @@ apm install korean-spell-daum
 - Daum 맞춤법 검사기에서 교정사항을 확인 후 좌측 상단의 `교정문 적용`을 누르면 기존의 Atom의 글이 교정문으로 바뀝니다.
 
 ## 스크린샷
-!(https://raw.githubusercontent.com/yomybaby/atom-korean-spell-daum/master/screenshot-spell.gif)
+![맞춤법검사 스크린샷](https://raw.githubusercontent.com/yomybaby/atom-korean-spell-daum/master/screenshot-spell.gif)
 
 ## 라이선스
 본 패키지 코드에 한해 MIT License에 따라 사용할 수 있습니다.

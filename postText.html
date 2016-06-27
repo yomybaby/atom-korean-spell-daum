@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  </head>
+  <body style="display:none"></body>
+  <script type="text/javascript">
+  function submit(value) {
+    var form = document.createElement("form");
+    var element1 = document.createElement("textarea"); 
+    
+    form.method = "POST";
+    form.action = "http://alldic.daum.net/grammar_checker.do";   
+    element1.value= value;
+    
+    // element1.type="hidden";
+    element1.name="sentence";
+    form.appendChild(element1);  
+    
+    document.body.appendChild(form);
+    form.submit();
+  }
+  
+  // submit(val);
+  </script>
+</html>

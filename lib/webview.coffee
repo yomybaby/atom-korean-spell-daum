@@ -7,7 +7,7 @@ class WebView extends View
   @content: (params) ->
     @div class: 'webview-pane', =>
       @div class: 'webview-buttons-container', =>
-        @button class: 'webview-apply', style: 'border-radius: 0', '교정문적용'
+        @button class: 'webview-apply', style: 'border-radius: 0; width: 100%; height:44px; color: #fff; font-size:15px; color: #fff; background-color: #028dff; text-shadow: -1px 1px #028dff; border: none;', '교정문 Atom에 바로 적용하기'
       @div class:'webview-container', style: 'height: 100%', =>
         @tag 'webview'
 
@@ -33,6 +33,7 @@ class WebView extends View
     @webview.addEventListener 'dom-ready', () ->
       this.executeJavaScript "submit && submit(#{stringifyText})"
       # have to remove 
+      this.executeJavaScript '$(".btn_examine").hide()'
     @webview.src = path.join( __dirname, '..', 'postText.html');
   
   applyCorrection: ->
@@ -77,7 +78,7 @@ class WebView extends View
       @openDaumSpell()
     @on 'click', '.webview-apply', =>
       @applyCorrection()
-      
+    @webview.setAttribute("style", "height:100%;");
     @webview.addEventListener 'will-navigate', (e) =>
       # console.log event
       if e.url.startsWith('yo://')

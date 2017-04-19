@@ -1,7 +1,7 @@
 {
   "name": "korean-spellchecker-daum",
   "main": "./lib/main",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Daum의 한글 맞춤법 검사기를 이용하는 Atom 패키지(Unofficial)",
   "keywords": [
     "daum",

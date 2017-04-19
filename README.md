@@ -6,7 +6,7 @@
 ## 설치
 
 ```
-apm install korean-spell-daum
+apm install korean-spellchecker-daum
 ```
 
 ## 사용법
